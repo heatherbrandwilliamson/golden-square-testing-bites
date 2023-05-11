@@ -13,3 +13,7 @@ class Counter
       return "Counted to #{@count} so far."
     end
 end
+
+counter1 = Counter.new()
+counter1.add(6)
+puts counter1.report
