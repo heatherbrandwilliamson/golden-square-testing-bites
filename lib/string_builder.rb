@@ -15,4 +15,3 @@ class StringBuilder
       return @str
     end
 end
-
