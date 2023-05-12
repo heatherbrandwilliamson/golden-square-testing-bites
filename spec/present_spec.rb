@@ -1,11 +1,11 @@
 require 'present'    #call file name 
 
 RSpec.describe Present do # call the class here 
-    context "when no task is set" do
+    context "when no contents has been unwrapped" do
       it "fails" do 
-    # call the methods/objects here 
-        result = # add variable here 
-          expect { reminder.remind() }.to raise_error "No reminder set!" # amend
+        present1 = Present.new()
+        present1.wrap("book")
+          expect { present1.unwrap }.to raise_error "No contents have been wrapped." # amend
       end
     end 
 end 
