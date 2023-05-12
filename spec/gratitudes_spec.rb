@@ -2,11 +2,10 @@ require 'gratitudes' #call the ruby file
 
 RSpec.describe Gratitudes do #call the classname 
     it "description" do #update description 
-        # call the methods here 
-    result = # call return method here 
-        expect(result).to eq #add code here 
+    gratitudes1 = Gratitudes.new()
+    gratitudes1.add("the sunshine today")
+    result = gratitudes1.format
+        expect(result).to eq "Be grateful for: the sunshine today"
     end 
-
-    #additional methods here 
 end 
 
