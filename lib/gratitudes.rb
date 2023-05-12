@@ -14,4 +14,4 @@ class Gratitudes
       formatted += @gratitudes.join(", ")
       return formatted
     end
-  end
+end
